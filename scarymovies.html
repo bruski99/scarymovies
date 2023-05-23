@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SCARY MOVIES</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Courier New', Courier, monospace, monospace;
+    }
+    
+    button {
+      background-color: maroon;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-family: 'Courier New', Courier, monospace, monospace;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .button-icon {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button onclick="selectRandomMovie()">
+      <img class="button-icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Forig00.deviantart.net%2F73db%2Ff%2F2017%2F245%2F9%2Fa%2Fghostface___transparent_by_asthonx1-dbm6ubm.png&f=1&nofb=1&ipt=824b7aa125dc947d8ee6664b526e22e94612bbc03d1d656e4738281c45794b1e&ipo=images" alt="gf">
+      What's your favorite scary movie?
+    </button>
+  </div>
+  
+  <script>
+    var movies = [
+    "Psycho (1960)",
+    "The Exorcist (1973)",
+    "Halloween (1978)",
+    "The Texas Chain Saw Massacre (1974)",
+    "Night of the Living Dead (1968)",
+    "A Nightmare on Elm Street (1984)",
+    "The Shining (1980)",
+    "Jaws (1975)",
+    "Alien (1979)",
+    "The Silence of the Lambs (1991)",
+    "The Thing (1982)",
+    "Rosemary's Baby (1968)",
+    "The Babadook (2014)",
+    "Get Out (2017)",
+    "Hereditary (2018)",
+    "The Witch (2015)",
+    "It Follows (2014)",
+    "The Descent (2005)",
+    "The Blair Witch Project (1999)",
+    "The Conjuring (2013)",
+    "Let the Right One In (2008)",
+    "Don't Look Now (1973)",
+    "Carrie (1976)",
+    "Scream (1996)",
+    "Suspiria (1977)",
+    "The Sixth Sense (1999)",
+    "A Tale of Two Sisters (2003)",
+    "Hellraiser (1987)",
+    "Martyrs (2008)",
+    "The Ring (2002)",
+    "The Orphanage (2007)",
+    "The Omen (1976)",
+    "Saw (2004)",
+    "The Cabin in the Woods (2012)",
+    "The Fly (1986)",
+    "Don't Breathe (2016)",
+    "Black Swan (2010)",
+    "Funny Games (2007)",
+    "The Wicker Man (1973)",
+    "Let Me In (2010)",
+    "The Others (2001)",
+    "Invasion of the Body Snatchers (1978)",
+    "The Changeling (1980)",
+    "The Texas Chainsaw Massacre (2003)",
+    "The Haunting (1963)",
+    "28 Days Later (2002)",
+    "The Mist (2007)",
+    "The Devil's Backbone (2001)",
+    "Sinister (2012)",
+    "The Babysitter (2017)",
+    "The Conjuring 2 (2016)",
+    "Halloween (2018)",
+    "The Amityville Horror (1979)",
+    "The Birds (1963)",
+    "Nosferatu (1922)",
+    "The Fly (1958)",
+    "A Quiet Place (2018)",
+    "Raw (2016)",
+    "The Evil Dead (1981)",
+    "It (2017)",
+    "The Wailing (2016)",
+    "Poltergeist (1982)",
+    "Drag Me to Hell (2009)",
+    "The Loved Ones (2009)",
+    "The Host (2006)",
+    "Oculus (2013)",
+    "The Purge (2013)",
+    "The Mist (2007)",
+    "Evil Dead II (1987)",
+    "Friday the 13th (1980)",
+    "The Hills Have Eyes (1977)",
+    "Insidious (2010)",
+    "The Strangers (2008)",
+    "The House of the Devil (2009)",
+    "Audition (1999)",
+    "Rec (2007)",
+    "The Haunting of Hill House (2018)",
+    "Under the Shadow (2016)",
+    "Green Room (2015)",
+    "It Comes at Night (2017)",
+    "Candyman (1992)",
+    "The Invisible Man (2020)",
+    "The Beyond (1981)",
+    "Ginger Snaps (2000)",
+    "Train to Busan (2016)",
+    "The Woman in Black (2012)",
+    "The Autopsy of Jane Doe (2016)",
+    "Lake Mungo (2008)",
+    "Tenebrae (1982)",
+    "Inside (2007)",
+    "May (2002)",
+    "The Devil's Rejects (2005)",
+    "Martyrs (2008)",
+    "The Changeling (2008)",
+    "Don't Look Now (2006)",
+    "Black Christmas (1974)",
+    "Henry: Portrait of a Serial Killer (1986)",
+    "Sleepy Hollow (1999)",
+    "The Guest (2014)",
+    "Audition (2019)"
+
+      ];
+    
+    function selectRandomMovie() {
+      var randomIndex = Math.floor(Math.random() * movies.length);
+      var selectedMovie = movies[randomIndex];
+      alert("Your scary movie is: " + selectedMovie);
+    }
+  </script>
+</body>
+</html>
